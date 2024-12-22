@@ -20,7 +20,6 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path='/about' element={
            <div>
-             <Navbar></Navbar>
              <About></About>
            </div>
 
