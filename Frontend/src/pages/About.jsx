@@ -86,7 +86,7 @@ function About() {
       </div>
 
         {/* Meet the Team Section */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 container mx-auto">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Meet the Team</h2>
           <p className="text-gray-700 max-w-2xl mx-auto mb-8">
             Gatherly was created by a passionate team of innovators dedicated to simplifying event management. 

@@ -3,7 +3,7 @@ import LogoWhite from "../assets/LogoWhite.png";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-gray-800 text-white mt-3">
       {/* Main Footer Section */}
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1: Brand Info */}
