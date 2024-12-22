@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AboutImage from "../assets/AboutUs.jpg"; // Replace with an actual image path
-import BalrajImage from "../assets/AboutUs.jpg"; // Replace with Balraj's profile image path
-import BalajiImage from "../assets/AboutUs.jpg"; // Replace with Balaji's profile image path
-import DivyanshuImage from "../assets/AboutUs.jpg"; // Replace with Divyanshu's profile image path
+import BalrajImage from "../assets/Balraj.jpg"; // Replace with Balraj's profile image path
+import BalajiImage from "../assets/Balaji.jpg"; // Replace with Balaji's profile image path
+import DivyanshuImage from "../assets/dk.jpg"; // Replace with Divyanshu's profile image path
 
 function About() {
   return (
