@@ -53,6 +53,38 @@ function About() {
           </div>
         </div>
 
+         {/* Future Plans Section */}
+         <div className="mt-12">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4 text-center">Future Plans</h2>
+          <p className="text-gray-700 max-w-2xl mx-auto mb-8 text-center">
+            We are continuously evolving and striving to make Gatherly the ultimate event management platform. Here are some of the exciting features we plan to introduce:
+          </p>
+
+          <ul className="list-disc list-inside text-gray-700 max-w-3xl mx-auto space-y-4">
+            <li>
+              <span className="font-semibold">Chatbot for Event Recommendations:</span> 
+              Personalized suggestions based on user preferences and behavior.
+            </li>
+            <li>
+              <span className="font-semibold">Gamification:</span> 
+              Engage users with polls, badges, and other interactive elements to enhance the experience.
+            </li>
+            <li>
+              <span className="font-semibold">Live Streaming Integration:</span> 
+              Seamlessly broadcast events to a global audience.
+            </li>
+            <li>
+              <span className="font-semibold">AI-Powered Recommendations:</span> 
+              Use advanced algorithms to match users with events they'll love.
+            </li>
+            <li>
+              <span className="font-semibold">Emotional Analytics Using AI:</span> 
+              Analyze attendee emotions and feedback to create more engaging experiences.
+            </li>
+          </ul>
+        </div>
+      </div>
+
         {/* Meet the Team Section */}
         <div className="text-center mt-12">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Meet the Team</h2>
@@ -105,7 +137,8 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+
+       
       <Footer />
     </div>
   );
