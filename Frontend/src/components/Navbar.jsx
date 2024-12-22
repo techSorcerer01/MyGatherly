@@ -76,6 +76,13 @@ function Navbar() {
             Post Events
           </Link>
 
+          <Link
+          to="/joinedevents"
+          className="block hover:text-blue-500 transition"
+           >
+            Joined Events
+           </Link>
+
           <Link to="/about" className="hover:text-blue-500 transition">
             About
           </Link>
@@ -120,12 +127,7 @@ function Navbar() {
                   >
                     Dashboard
                   </div>
-                  <div
-                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => handleNavigate('/joinedevents')}
-                  >
-                    Joined Events
-                  </div>
+                  
                   <div
                     className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                     onClick={() => console.log('Logout clicked')}
@@ -165,7 +167,6 @@ function Navbar() {
                     <ul className="text-gray-700">
                     <li className="px-4 py-2 hover:bg-gray-100">Profile</li>
                     <li className="px-4 py-2 hover:bg-gray-100">Dashboard</li>
-                    <li className="px-4 py-2 hover:bg-gray-100">Joined Events</li>
                     <li className="px-4 py-2 hover:bg-gray-100">Logout</li>
                     </ul>
                 </div>
@@ -212,6 +213,13 @@ function Navbar() {
           className="block hover:text-blue-500 transition"
         >
           Post Events
+        </Link>
+
+        <Link
+          to="/joinedevents"
+          className="block hover:text-blue-500 transition"
+        >
+          Joined Events
         </Link>
 
         <Link to="/about" className="block hover:text-blue-500 transition">
