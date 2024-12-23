@@ -4,7 +4,6 @@ function EventDetails() {
   return (
     <div>
         EventDetails
-        
 
     </div>
   )

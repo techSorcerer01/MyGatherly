@@ -1,13 +1,10 @@
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import HeroSection from './components/HeroSection'
-import KeyFeatures from './components/KeyFeatures'
-import Testimonials from './components/Testimonials'
 import Home from './pages/Home'
+
 import { BrowserRouter ,Route,Routes,Outlet} from 'react-router-dom'
 import About from './pages/About'
-import JoinedEvents from './pages/JoinedEvents'
 import Explore from './pages/Explore'
 import DashBoard from './pages/DashBoard'
 import Profile from './pages/Profile'
@@ -24,14 +21,7 @@ function App() {
            </div>
 
         }></Route>
-        <Route path='/joinedevents' element={
-          
-          <div>
-             <Navbar></Navbar>
-             <JoinedEvents></JoinedEvents>
-           </div>
-          
-          } ></Route>
+        
         <Route path='/explore' element={ 
          
           <div>
