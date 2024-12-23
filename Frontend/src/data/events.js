@@ -13,7 +13,7 @@ const events = [
       eligibility: "Open to all tech enthusiasts and professionals.",
       participant_count: 200,
       ticket_price: 49.99,
-      event_pic: "https://example.com/images/tech_innovators.jpg",
+      event_pic: "https://a.storyblok.com/f/188325/1920x1280/41e681c422/alexandre-pellaes-6vajp0pscx0-unsplash-1-1.jpg",
       caption: "Empowering the Future of Tech!"
     },
     {
@@ -30,7 +30,7 @@ const events = [
       eligibility: "Anyone aged 16 and above.",
       participant_count: 50,
       ticket_price: 25.0,
-      event_pic: "https://example.com/images/yoga_workshop.jpg",
+      event_pic: "https://thecentrum.in/wp-content/uploads/2023/06/Yoga-Training-Sessions-img-5-scaled-1-1170x550.webp",
       caption: "Find Your Zen."
     },
     {
@@ -47,7 +47,7 @@ const events = [
       eligibility: "Open to students, professionals, and enthusiasts with a passion for AI.",
       participant_count: 500,
       ticket_price: 0.0,
-      event_pic: "https://example.com/images/ai_summit.jpg",
+      event_pic: "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image2_IxyNSOm.original.jpg",
       caption: "The Future of AI Starts Here!"
     },
     {
