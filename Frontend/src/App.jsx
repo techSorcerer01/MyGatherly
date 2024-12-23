@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import EventDetails from './pages/EventDetails'
 
 import { BrowserRouter ,Route,Routes,Outlet} from 'react-router-dom'
 import About from './pages/About'
@@ -21,7 +22,7 @@ function App() {
            </div>
 
         }></Route>
-        
+
         <Route path='/explore' element={ 
          
           <div>
@@ -54,8 +55,10 @@ function App() {
             <PostEvents></PostEvents>
           </div>
         }> 
-           
         </Route>
+
+        <Route path="/explore/eventdetails/:id" element={<EventDetails />} /> {/* Dynamic route */}
+        
      </Routes>
    </BrowserRouter>
   )

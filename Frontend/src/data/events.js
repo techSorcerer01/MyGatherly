@@ -1,9 +1,10 @@
 const events = [
   {
+    id: 1,
     title: "Tech Innovators Conference",
     date_of_event: "2024-01-15",
     organizer_name: "TechWorld Events",
-    event_time: "10:00 AM - 4:00 PM",
+    event_time: "10:00 AM - 4:00 PM",   
     category: "Technology",
     mode: "Hybrid",
     venue: "TechHub Center, San Francisco",
@@ -16,7 +17,8 @@ const events = [
     event_pic: "https://a.storyblok.com/f/188325/1920x1280/41e681c422/alexandre-pellaes-6vajp0pscx0-unsplash-1-1.jpg",
     caption: "Empowering the Future of Tech!"
   },
-  {
+  { 
+    id: 2,
     title: "Yoga for Beginners Workshop",
     date_of_event: "2024-02-10",
     organizer_name: "Wellness Together",
@@ -33,7 +35,8 @@ const events = [
     event_pic: "https://thecentrum.in/wp-content/uploads/2023/06/Yoga-Training-Sessions-img-5-scaled-1-1170x550.webp",
     caption: "Find Your Zen."
   },
-  {
+  {  
+    id: 3,
     title: "AI & Machine Learning Summit",
     date_of_event: "2024-03-05",
     organizer_name: "AI Global Network",
@@ -51,6 +54,7 @@ const events = [
     caption: "The Future of AI Starts Here!"
   },
   {
+    id:4,
     title: "Art & Craft Fair",
     date_of_event: "2024-04-12",
     organizer_name: "Creative Minds",
@@ -68,6 +72,7 @@ const events = [
     caption: "Celebrate Creativity and Talent."
   },
   {
+    id: 5,
     title: "Startup Pitch Night",
     date_of_event: "2024-05-20",
     organizer_name: "Entrepreneurs United",
@@ -85,6 +90,7 @@ const events = [
     caption: "Your Big Idea, Our Platform."
   },
   {
+      id: 6,
     title: "International Art Exhibition",
     date_of_event: "2024-06-15",
     organizer_name: "Global Art Society",
@@ -102,6 +108,7 @@ const events = [
     caption: "A Journey Through Art."
   },
   {
+      id: 7,
     title: "Digital Marketing Workshop",
     date_of_event: "2024-07-02",
     organizer_name: "Marketing Masters",
@@ -119,6 +126,7 @@ const events = [
     caption: "Elevate Your Marketing Skills."
   },
   {
+      id: 8,
     title: "Global Health Summit",
     date_of_event: "2024-08-19",
     organizer_name: "Health Network",
@@ -136,6 +144,7 @@ const events = [
     caption: "Transforming Global Health."
   },
   {
+      id: 9,
     title: "Blockchain for Business",
     date_of_event: "2024-09-01",
     organizer_name: "Tech Innovators",
@@ -153,6 +162,7 @@ const events = [
     caption: "Unlock the Power of Blockchain."
   },
   {
+      id: 10,
     title: "Entrepreneurship Bootcamp",
     date_of_event: "2024-10-10",
     organizer_name: "Startup Boosters",
@@ -169,7 +179,7 @@ const events = [
     event_pic: "https://intheknow.insead.edu/sites/intheknow/files/2019-04/IMG_1109-rihxrd_feature.jpg",
     caption: "Turning Ideas Into Action."
   },
-  {
+  { id: 11,
     title: "Cooking Masterclass with Michelin Chefs",
     date_of_event: "2024-11-03",
     organizer_name: "Gourmet Cuisine",
@@ -187,6 +197,7 @@ const events = [
     caption: "Experience the Art of Cooking."
   },
   {
+      id: 12,
     title: "Jazz Music Festival",
     date_of_event: "2024-12-12",
     organizer_name: "Music Lovers Society",
@@ -203,7 +214,7 @@ const events = [
     event_pic: "https://assets.simpleviewinc.com/simpleview/image/upload/crm/miamifl/JITG-afternoon-stage-1440x900_5F6F1CC8-5056-A36A-0B016090B8D53C8A_5f6fae43-5056-a36a-0bb819442fe833ca.jpg",
     caption: "A Night of Smooth Jazz."
   },
-  {
+  { id: 13,
     title: "Sustainable Living Expo",
     date_of_event: "2024-11-25",
     organizer_name: "Green Future Foundation",
@@ -221,6 +232,7 @@ const events = [
     caption: "Towards a Greener Future."
   },
   {
+      id: 14,
     title: "Women in Business Forum",
     date_of_event: "2024-12-01",
     organizer_name: "Empower Women",

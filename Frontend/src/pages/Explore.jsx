@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { useLocation, useNavigate } from "react-router-dom";
 import FilterSidebar from "../components/FilterSidebar";
 import events from "../data/events";
+import EventDetails from "./EventDetails";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Explore() {
   const [filteredEvents, setFilteredEvents] = useState(events);
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOption, setSortOption] = useState("date"); // Default sort by date
   const location = useLocation();
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Extract search query from URL query parameters
   useEffect(() => {
@@ -23,16 +25,16 @@ function Explore() {
 
   // Filtering Logic
   const handleSearch = (query) => {
-    const lowerCaseQuery = query.toLowerCase(); // Make query lowercase
+    const lowerCaseQuery = query.toLowerCase();
     const filtered = events.filter(
       (event) =>
-        event.title.toLowerCase().includes(lowerCaseQuery) || // Search in title
-        event.category.toLowerCase().includes(lowerCaseQuery) || // Search in category
-        event.organizer_name.toLowerCase().includes(lowerCaseQuery) || // Search in organizer_name
-        event.city.toLowerCase().includes(lowerCaseQuery) || // Search in city
-        event.country.toLowerCase().includes(lowerCaseQuery) // Search in country
+        event.title.toLowerCase().includes(lowerCaseQuery) ||
+        event.category.toLowerCase().includes(lowerCaseQuery) ||
+        event.organizer_name.toLowerCase().includes(lowerCaseQuery) ||
+        event.city.toLowerCase().includes(lowerCaseQuery) ||
+        event.country.toLowerCase().includes(lowerCaseQuery)
     );
-    setFilteredEvents(filtered); // Update filtered events state
+    setFilteredEvents(filtered);
   };
 
   // Sorting Logic
@@ -40,11 +42,11 @@ function Explore() {
     setSortOption(option);
     const sortedEvents = [...filteredEvents].sort((a, b) => {
       if (option === "date") {
-        return new Date(a.date_of_event) - new Date(b.date_of_event); // Sort by date
+        return new Date(a.date_of_event) - new Date(b.date_of_event);
       } else if (option === "title") {
-        return a.title.localeCompare(b.title); // Sort alphabetically by title
+        return a.title.localeCompare(b.title);
       } else if (option === "price") {
-        return a.price - b.price; // Sort by price (low to high)
+        return a.price - b.price;
       }
       return 0;
     });
@@ -52,22 +54,19 @@ function Explore() {
   };
 
   return (
+  <>
+    <Navbar></Navbar>
     <div>
-      <Navbar />
       <div className="container mx-auto px-4 py-8 flex">
-        {/* Sidebar */}
         <aside className="mr-2 w-2/4 md:w-1/4">
           <FilterSidebar onFilter={handleSearch} />
         </aside>
 
-        {/* Main Content */}
         <main className="w-3/4 ml-2">
-          {/* Display Search Query */}
           {searchQuery && (
             <h3 className="text-xl mb-4">Showing results for "{searchQuery}"</h3>
           )}
 
-          {/* Sort Dropdown */}
           <div className="mb-4 flex items-center justify-between">
             <label htmlFor="sort" className="text-gray-700 font-medium">
               Sort By:
@@ -84,10 +83,13 @@ function Explore() {
             </select>
           </div>
 
-          {/* Render Event Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredEvents.map((event) => (
-              <div key={event.title} onClick={()=>{navigate(`/explore/eventdetails/id:${event.title}`)}}  className="border rounded-lg overflow-hidden shadow-lg">
+              <div
+                key={event.id}
+                onClick={() => navigate(`/explore/eventdetails/${event.id}`)} // Navigate to event details page using ID
+                className="border rounded-lg overflow-hidden shadow-lg cursor-pointer"
+              >
                 <img
                   src={event.event_pic}
                   alt={event.title}
@@ -99,7 +101,7 @@ function Explore() {
                     {new Date(event.date_of_event).toDateString()}
                   </p>
                   <p className="text-gray-700 font-medium mt-2">
-                    Price: ${event.price}
+                   {` Price: ${event.ticket_price}`}
                   </p>
                   <p className="text-gray-700 font-medium mt-2">
                     Organized by: {event.organizer_name}
@@ -113,8 +115,8 @@ function Explore() {
           </div>
         </main>
       </div>
-      <Footer />
     </div>
+  </>
   );
 }
 
