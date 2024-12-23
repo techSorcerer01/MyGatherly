@@ -75,14 +75,6 @@ function Navbar() {
           < Link to="/postevents" className="hover:text-blue-500 transition">
             Post Events
           </Link>
-
-          <Link
-          to="/joinedevents"
-          className="block hover:text-blue-500 transition"
-           >
-            Joined Events
-           </Link>
-
           <Link to="/about" className="hover:text-blue-500 transition">
             About
           </Link>
@@ -213,13 +205,6 @@ function Navbar() {
           className="block hover:text-blue-500 transition"
         >
           Post Events
-        </Link>
-
-        <Link
-          to="/joinedevents"
-          className="block hover:text-blue-500 transition"
-        >
-          Joined Events
         </Link>
 
         <Link to="/about" className="block hover:text-blue-500 transition">
